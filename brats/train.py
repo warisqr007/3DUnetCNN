@@ -45,6 +45,8 @@ config["training_file"] = os.path.abspath("training_ids.pkl")
 config["validation_file"] = os.path.abspath("validation_ids.pkl")
 config["overwrite"] = False  # If True, will previous files. If False, will use previously written files.
 
+def config_r():
+    return config
 
 def fetch_training_data_files():
     training_data_files = list()
